@@ -1,0 +1,59 @@
+[
+
+ {
+  "id": 1,
+  "eventName": "Quranic Memorization Contest",
+  "price": "$500",
+  "image": "https://i.ibb.co/F4q1yxC/id-1.jpg",
+  "shortDescription": "Showcase your Quranic memorization skills and compete with talented individuals worldwide.",
+  "detailDescription": "Join our Quranic Memorization Contest and demonstrate your mastery of Quranic verses. Participants will be evaluated based on accuracy, fluency, and recitation style. Prizes will be awarded to top performers. Don't miss this opportunity to showcase your devotion and talent.",
+  "button": "View More"
+},
+
+{
+ "id": 2,
+ "eventName": "Islamic Educational Conference",
+ "price": "$800",
+ "image": "https://i.ibb.co/4jN2435/id-2.jpg",
+ "shortDescription": "Explore the depths of Islamic knowledge, theology, and philosophy with leading scholars.",
+ "detailDescription": "Immerse yourself in a rich intellectual experience at our Islamic Educational Conference. Engage with renowned scholars, participate in enlightening discussions, and gain profound insights into various aspects of Islam. This conference is a unique opportunity to expand your understanding of Islamic teachings and connect with fellow seekers of knowledge.",
+ "button": "View More"
+},
+{
+ "id": 3,
+ "eventName": "Career Fair for Students",
+ "price": "$300",
+ "image": "https://i.ibb.co/jk0LmFJ/id-3.jpg",
+ "shortDescription": "Connect with industry professionals, explore career opportunities, and receive valuable guidance.",
+ "detailDescription": "Our Career Fair for Young individuals provides a platform to interact with professionals from diverse fields. Attendees can explore potential career paths, attend resume workshops, and participate in mock interviews. Don't miss this chance to kick-start your career journey. Join us for a day of networking, learning, and inspiration.",
+ "button": "View More"
+},
+{
+ "id": 4,
+ "eventName": "Kid Summer Fest",
+ "price": "200",
+ "image": "https://i.ibb.co/qjwpDjm/id-4.jpg",
+ "shortDescription": "A fun-filled event designed exclusively for children, featuring games, activities, and educational workshops.",
+ "detailDescription": "Kid Fest is a delightful event tailored for children, offering a range of engaging activities, interactive workshops, and entertaining games. From creative arts and crafts to science experiments, this event promises a day of learning and laughter for kids of all ages. Parents, bring your children for a day of fun, education, and creativity.",
+ "button": "View More"
+},
+{
+ "id": 5,
+ "eventName": "Workshop & Webinar",
+ "price": "$600",
+ "image": "https://i.ibb.co/ykqKYwR/id-5.jpg",
+ "shortDescription": "Participate in hands-on workshops and insightful webinars led by industry experts.",
+ "detailDescription": "Our Workshop & Webinar event offers a blend of practical hands-on learning and knowledge-sharing sessions. Attendees can choose from a variety of workshops spanning different topics and attend webinars featuring experts from various fields. Enhance your skills and expand your knowledge in this interactive learning experience. Join us for a day of education, networking, and skill development.",
+ "button": "View More"
+},
+{
+ "id": 6,
+ "eventName": "Train Your Brain",
+ "price": "$1200",
+ "image": "https://i.ibb.co/YPq9YVz/id-6.png",
+ "shortDescription": "Challenge your mind with puzzles, quizzes, and brain-teasing activities to enhance cognitive skills.",
+ "detailDescription": "Train Your Brain is a mental fitness event designed to stimulate your intellect. Engage in challenging puzzles, quizzes, and brain-teasing activities that promote cognitive abilities. Participate in group activities, solve complex problems, and enhance your problem-solving skills. Unlock the full potential of your mind at this unique event. Join us for a day of mental exercises, learning, and brain-boosting activities.",
+ "button": "View More"
+}
+
+]

@@ -48,3 +48,16 @@ console.log(count);
 
 ans: 3
 description: from the nums array num iterates over the elemnts inside the array. it checks if the current num is truthy meaning not equal to 0 , the count variable increases by 1. so it will get 3. 
+
+--------------/////Features & functionalities in the website/////------------
+Features:
+1. the website is about an educational event management website 
+2. speciality of this website is adding Registration form, log in form, private route setup which opens upon getting user info.
+3. Login through Google signup is an extra feature here.
+
+Functionality: 
+1. whole website is developed using vite & react. Various features of react is used to add various features in the website. 
+2. special funcrionality added in the website is FIrebase Authentication Method. Its a popular authentication tool providing website builders to authenticate user info.
+3. Using firebase authentication tool, the user bahaviour can be detected. if an user in not logged in the website , he doesnt get access to private routes like seeing service details, or event details, or booking info. in this case user is redirected to the log in page. here is a chance of doing  google sign in to ease the user experience. 
+
+4. Variety of react features are used to add extra functionality in the website which made it user friendly. 

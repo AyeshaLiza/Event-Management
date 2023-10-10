@@ -7,6 +7,10 @@ import Login from '../components/login/login';
 import Register from '../components/regester/Register';
 import Error from '../pages/error/Error';
 import PrivateRoute from '../pages/PrivateRoute/PrivateRoute';
+import BookedPrivateRoute from '../pages/PrivateRoute/BookedPrivateRoute';
+import BookingPrivateRoute from '../pages/PrivateRoute/BookingPrivateRoute';
+import SpecialEventPrivateRoute from '../pages/PrivateRoute/SpecialEventPrivateRoute';
+import SpecialEvent from '../pages/SpecialEvent';
 
 const Routes = createBrowserRouter(
  [
@@ -35,6 +39,18 @@ const Routes = createBrowserRouter(
            <ServiceDetail></ServiceDetail>
       </PrivateRoute>,
       loader: () =>fetch('/Fakejsondata.json')
+     },
+     {
+      path: '/venue',
+    element: <BookingPrivateRoute>
+      <BookedPrivateRoute></BookedPrivateRoute>,
+    </BookingPrivateRoute>
+     },
+     {
+      path: '/event',
+    element: <SpecialEventPrivateRoute>
+      <SpecialEvent></SpecialEvent>
+    </SpecialEventPrivateRoute>
      },
      
     

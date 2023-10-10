@@ -14,7 +14,7 @@ const Login = () => {
   console.log(location);
     const from = location.state?.from?.pathname || "/";
 
-  const {googleSignIn, signIn}= useContext(AuthContext) || []
+  const {googleSignIn, signIn, updateProfile}= useContext(AuthContext) || []
   
       
       const handleFormSubmit = e =>{
@@ -23,8 +23,6 @@ const Login = () => {
   const name = e.target.name.value;
   const password = e.target.password.value;
   console.log(email, password);
-
-  
   
   setLoginError('')
   if ( email, password) {
@@ -33,6 +31,15 @@ const Login = () => {
       setLoginError(error.message);
     })
   }
+    if(name){
+      updateProfile(name).then(() => {
+
+      })
+      .catch((error) =>{
+        setLoginError(error.message);
+      })
+    }
+
 }
 
 const handleGoogle = () =>{
@@ -52,12 +59,6 @@ const handleGoogle = () =>{
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
       <form onSubmit={handleFormSubmit} className="card-body">
 
-      <div className="form-control">
-          <label className="label">
-            <span className="label-text">Name</span>
-          </label>
-          <input type="text" placeholder=" name" name='name' className="input input-bordered input-primary w-full max-w-xs" />
-        </div>
 
 
         <div className="form-control">

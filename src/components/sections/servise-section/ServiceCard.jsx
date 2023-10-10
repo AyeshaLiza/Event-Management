@@ -2,12 +2,13 @@ import PropTypes from 'prop-types';
 import ServiceDetail from './ServiceDetail';
 import { Link } from 'react-router-dom';
 const ServiceCard = ({service}) => {
+  
  const {id, price, eventName, image, shortDescription, detailDescription, button} = service || {};
  
 
  return (
-  <div>
-      <div className="card w-96  bg-base-100  shadow-xl">
+  <div data-aos="fade-left">
+      <div className="card w-96  bg-base-100  shadow-xl" >
   <figure><img className='h-[260px]' src={image} alt="image" /></figure>
   <div className="card-body">
     <h2 className="card-title text-2xl text-violet-900">{eventName}</h2>

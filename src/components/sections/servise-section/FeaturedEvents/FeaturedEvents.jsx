@@ -4,10 +4,11 @@ import BookFestive from '../../../../assets/BookFestive.jpg'
 import qurancom from '../../../../assets/qurancom.jpg'
 const FeaturedEvents = () => {
  return (
-  <div className='w-[90%] mx-auto my-8'>
+  <div  data-aos="fade-right"
+  className='w-[90%] mx-auto my-8'>
               <h1 className='text-4xl text-center font-bold text-violet-900'>Featured Events</h1>
 
-     <div className='grid grid-cols-3 my-7'>
+     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-7'>
       <div className="card w-96  bg-base-100  shadow-xl">
   <figure><img className='h-[220px] w-96' src={summerfest} alt="image" /></figure>
   <div className="card-body">

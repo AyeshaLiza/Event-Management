@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../firebase/AuthProvider";
+import googlepic from '../../../assets/googlepic.jpg'
 
 
 const Navbar = () => {
@@ -8,8 +9,11 @@ const Navbar = () => {
   console.log(user);
 
     const handleLogout = () =>{
-      logOut().then()
+      logOut()
+      .then()
+      
     }
+    
 
 
 
@@ -26,23 +30,23 @@ const Navbar = () => {
 </li>
 
 <li> <NavLink
-  to="/about"
+  to="/venue"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "active" : ""
   }
 >
-  About
+  Venue
 </NavLink>
 </li>
  
  <li>
  <NavLink
-  to="/service"
+  to="/event"
   className={({ isActive, isPending }) =>
     isPending ? "pending" : isActive ? "active" : ""
   }
 >
-  Service
+  Upcoming Events
 </NavLink>
  </li>
 
@@ -92,8 +96,17 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     {
-      user && <div> <p>{user.name}</p>
-      <button onClick={handleLogout} className="btn btn-secondary">Logout</button></div>
+      user ? <>
+       <div>
+      <img className="rounded-full w-10 h-10" src={googlepic} alt="" />
+      <p>{user.email}
+      </p> 
+        </div>
+    <button onClick={handleLogout} className="btn btn-secondary">Logout</button> 
+    
+    </>  : <Link to={"/login"}>
+      <btn className="btn btn-secondary">Login</btn>
+    </Link>
     }
    
   </div>

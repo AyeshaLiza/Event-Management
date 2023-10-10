@@ -5,10 +5,11 @@ import login from '../../assets/login.jpg'
 import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
 
+
 const Register = () => {
   const {signUp, googleSignIn} = useContext(AuthContext)
 
-  
+  const [proPicture, setProPicture] = useState({}) || []
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('') || []
   const [registerError, setRegisterError] = useState('') || []
@@ -20,6 +21,7 @@ const handleFormSubmit = e =>{
   const name = e.target.name.value;
   const email = e.target.email.value;
   const password = e.target.password.value;
+  console.log(email, password);
 setRegisterError('')
 
 
@@ -29,12 +31,14 @@ setRegisterError('')
     return
   }
   else{
-    signUp(name, email, password).then((result) => 
+    signUp( email, password).then((result) => 
         swal("Good job!", "regestration successfully done!", "success")
       )
       .catch((error) =>{
         setRegisterError(error.message)})
   }
+
+  
 }
 
 const handleGoogle = () =>{
@@ -82,7 +86,7 @@ const handleGoogle = () =>{
           <label className="label">
             <span className="label-text">Image</span>
           </label>
-          <input type="" name='' placeholder=""  className="input input-bordered input-primary w-full max-w-xs" />
+          <input type='' name='' placeholder=""  className="input input-bordered input-primary w-full max-w-xs" />
 
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
